@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Okpy related files
+.ok_history
+.ok_messages
+.ok_storage.bak
+.ok_storage.dat
+.ok_storage.dir
