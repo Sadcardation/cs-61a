@@ -337,7 +337,7 @@ def add_trees(t1, t2):
     #             [add_trees(b1, b2) for b1, b2 in zip(pad_t1, pad_t2)])    
     zipped = list(zip(t1, t2))
     _, wider_tree = sorted([t1, t2], key=lambda x: len(branches(x)))
-    if len(zipped) == 1 and len(t1) == len(t2):
+    if len(zipped) == 1 and len(branches(t1)) == len(branches(t2)):
         return tree(sum(zipped[0]), branches(wider_tree))
     else:
         end = len(zipped)
